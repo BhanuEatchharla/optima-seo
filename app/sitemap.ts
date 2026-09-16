@@ -1,12 +1,11 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl =
-    "https://ramki-optima-fyw5.vercel.app";
+  const baseUrl = "https://optima-seo.vercel.app";
 
   return [
     {
-      url: baseUrl,
+      url: `${baseUrl}/`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 1,

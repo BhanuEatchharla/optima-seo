@@ -6,8 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-
-    sitemap:
-      "https://ramki-optima-fyw5.vercel.app/sitemap.xml",
+    sitemap: "https://optima-seo.vercel.app/sitemap.xml",
   };
 }
