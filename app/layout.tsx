@@ -1,11 +1,7 @@
 import type { Metadata } from "next";
-
 import "./globals.css";
 
 import { Inter, Playfair_Display } from "next/font/google";
-
-import { LayoutProvider } from "./LayoutProvider";
-
 
 const inter = Inter({
   variable: "--font-inter",
@@ -24,9 +20,7 @@ const playfair = Playfair_Display({
 ========================================================= */
 
 export const metadata: Metadata = {
-  metadataBase: new URL(
-    "https://ramki-optima-fyw5.vercel.app"
-  ),
+  metadataBase: new URL("https://optima-seo.vercel.app"),
 
   title: {
     default: "Plant Logistics Management Software | OPTIMA",
@@ -35,6 +29,10 @@ export const metadata: Metadata = {
 
   description:
     "OPTIMA is a plant logistics and transportation management platform for vehicle induction, fleet tracking, dispatch, compliance, route optimization and delivery operations.",
+
+     verification: {
+    google: "qaRCj5d26bALksXmAjMpfOHTvu4FYxqfIiVcDabpim4",
+  },
 
   keywords: [
     "plant logistics management software",
@@ -59,11 +57,10 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://ramki-optima-fyw5.vercel.app",
+    url: "https://optima-seo.vercel.app",
     siteName: "OPTIMA",
 
-    title:
-      "Plant Logistics Management Software | OPTIMA",
+    title: "Plant Logistics Management Software | OPTIMA",
 
     description:
       "Manage plant logistics, vehicle induction, fleet tracking, dispatch, compliance, route optimization and delivery operations with OPTIMA.",
@@ -73,8 +70,7 @@ export const metadata: Metadata = {
         url: "/video-poster.jpg",
         width: 1200,
         height: 630,
-        alt:
-          "OPTIMA Plant Logistics and Transportation Management Platform",
+        alt: "OPTIMA Plant Logistics and Transportation Management Platform",
       },
     ],
   },
@@ -85,7 +81,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://ramki-optima-fyw5.vercel.app",
+    canonical: "https://optima-seo.vercel.app",
   },
 };
 
@@ -99,53 +95,32 @@ const structuredData = {
   "@graph": [
     {
       "@type": "Organization",
-
-      "@id":
-        "https://ramki-optima-fyw5.vercel.app/#organization",
-
+      "@id": "https://optima-seo.vercel.app/#organization",
       name: "OPTIMA",
-
-      url: "https://ramki-optima-fyw5.vercel.app",
-
-      email: "info@ramkigroup.com",
+      url: "https://optima-seo.vercel.app",
     },
 
     {
       "@type": "WebSite",
-
-      "@id":
-        "https://ramki-optima-fyw5.vercel.app/#website",
-
-      url: "https://ramki-optima-fyw5.vercel.app",
-
+      "@id": "https://optima-seo.vercel.app/#website",
+      url: "https://optima-seo.vercel.app",
       name: "OPTIMA",
-
       publisher: {
-        "@id":
-          "https://ramki-optima-fyw5.vercel.app/#organization",
+        "@id": "https://optima-seo.vercel.app/#organization",
       },
     },
 
     {
       "@type": "SoftwareApplication",
-
-      "@id":
-        "https://ramki-optima-fyw5.vercel.app/#software",
-
+      "@id": "https://optima-seo.vercel.app/#software",
       name: "OPTIMA",
-
       applicationCategory: "BusinessApplication",
-
       operatingSystem: "Web",
-
-      url: "https://ramki-optima-fyw5.vercel.app",
-
+      url: "https://optima-seo.vercel.app",
       description:
         "OPTIMA is a plant logistics and transportation management platform for vehicle induction, fleet tracking, dispatch, compliance, route optimization and delivery operations.",
-
       publisher: {
-        "@id":
-          "https://ramki-optima-fyw5.vercel.app/#organization",
+        "@id": "https://optima-seo.vercel.app/#organization",
       },
     },
   ],
@@ -165,10 +140,6 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${playfair.variable} antialiased`}
       >
-        {/* =================================================
-            JSON-LD STRUCTURED DATA
-        ================================================= */}
-
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -176,15 +147,7 @@ export default function RootLayout({
           }}
         />
 
-        {/* =================================================
-            APPLICATION LAYOUT
-        ================================================= */}
-
-        <LayoutProvider>
-          
-
-          {children}
-        </LayoutProvider>
+        {children}
       </body>
     </html>
   );
