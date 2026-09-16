@@ -10,7 +10,6 @@ import logo from "@/assets/logo.png";
 
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/theme-toggle";
-import { supabase } from "@/lib/supabase-client";
 import { toast } from "sonner";
 
 import {
@@ -68,19 +67,6 @@ export function Navigation() {
     if (!validateForm()) return;
 
     try {
-      const { error } = await supabase
-        .from("demo_requests")
-        .insert([
-          {
-            name: form.name,
-            company: form.company,
-            email: form.email,
-            phone: form.phone,
-          },
-        ]);
-
-      if (error) throw error;
-
       await fetch("/api/contact", {
         method: "POST",
         headers: {
