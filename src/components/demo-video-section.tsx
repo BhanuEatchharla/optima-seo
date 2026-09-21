@@ -58,7 +58,7 @@
 //               src="/videos/hero-bg.mp4"
 //               controls
 //               className="w-full aspect-video object-contain"
-//               poster="/images/video-poster.jpg"
+//               poster="/images/video-poster.webp"
 //             />
 //           </div>
 //         </div>

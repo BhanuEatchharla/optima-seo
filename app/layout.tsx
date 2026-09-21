@@ -67,7 +67,7 @@ export const metadata: Metadata = {
 
     images: [
       {
-        url: "/video-poster.jpg",
+        url: "/video-poster.webp",
         width: 1200,
         height: 630,
         alt: "OPTIMA Plant Logistics and Transportation Management Platform",

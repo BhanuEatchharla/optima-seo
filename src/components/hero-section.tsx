@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 // import { DemoModal } from "@/components/demo-modal";
 import { Play, Zap } from "lucide-react";
-import heroImage from "@/assets/hero-logistics.png";
+import heroImage from "@/assets/hero-logistics.webp";
 
 export function HeroSection() {
   const [isDemoModalOpen, setIsDemoModalOpen] = useState(false);
