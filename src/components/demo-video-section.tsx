@@ -211,7 +211,7 @@ export function DemoVideoSection() {
               ref={videoRef}
               src={VIDEO_MAP[lang]}
               className="w-full aspect-video object-contain"
-              poster="/video-poster.jpg"
+              poster="/video-poster.webp"
               playsInline
               controls={playing}
             />
